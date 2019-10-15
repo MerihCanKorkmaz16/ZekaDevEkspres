@@ -1,0 +1,795 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FE651A9A-4828-4C06-9733-D612DB606F7B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZekaDevEkspresDeneme</RootNamespace>
+    <AssemblyName>ZekaDevEkspresDeneme</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v19.1" />
+    <Reference Include="DevExpress.Charts.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.CodeParser.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dashboard.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dashboard.v19.1.Win, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v19.1" />
+    <Reference Include="DevExpress.DataAccess.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v19.1.UI, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dialogs.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.ExpressApp.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Map.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v19.1.Drawing, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Persistent.Base.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.SpellChecker.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Spreadsheet.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.TreeMap.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v19.1" />
+    <Reference Include="DevExpress.Sparkline.v19.1.Core" />
+    <Reference Include="DevExpress.Utils.v19.1.UI, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v19.1.Extensions, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v19.1.UI, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v19.1.Wizard, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraDialogs.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v19.1" />
+    <Reference Include="DevExpress.Printing.v19.1.Core" />
+    <Reference Include="DevExpress.XtraGauges.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v19.1.Presets, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v19.1.Win, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraLayout.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraMap.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPdfViewer.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v19.1.Extensions, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v19.1.Extensions, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraSpellChecker.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraSpreadsheet.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeMap.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DogrudanTeminPeriyodikHizmetBelgesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DogrudanTeminPeriyodikHizmetBelgesi.Designer.cs">
+      <DependentUpon>DogrudanTeminPeriyodikHizmetBelgesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoğrudanTeminPeriyodikBakımİsSecmeFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoğrudanTeminPeriyodikBakımİsSecmeFormu.Designer.cs">
+      <DependentUpon>DoğrudanTeminPeriyodikBakımİsSecmeFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoğrudanTeminPeriyodikEvrakYükleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoğrudanTeminPeriyodikEvrakYükleme.Designer.cs">
+      <DependentUpon>DoğrudanTeminPeriyodikEvrakYükleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoğrudanTeminPeriyodikFirmaEkleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoğrudanTeminPeriyodikFirmaEkleme.Designer.cs">
+      <DependentUpon>DoğrudanTeminPeriyodikFirmaEkleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoğrudanTeminPeriyodikFirmaTeklifSecmeVeSözlesmeHazırlama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoğrudanTeminPeriyodikFirmaTeklifSecmeVeSözlesmeHazırlama.Designer.cs">
+      <DependentUpon>DoğrudanTeminPeriyodikFirmaTeklifSecmeVeSözlesmeHazırlama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoğrudanTeminPeriyodikSatınAlmaBilgilendirmeFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoğrudanTeminPeriyodikSatınAlmaBilgilendirmeFormu.Designer.cs">
+      <DependentUpon>DoğrudanTeminPeriyodikSatınAlmaBilgilendirmeFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoğrudanTeminPeriyodikSözlesmeTaslağı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoğrudanTeminPeriyodikSözlesmeTaslağı.Designer.cs">
+      <DependentUpon>DoğrudanTeminPeriyodikSözlesmeTaslağı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoğrudanTeminPeriyodikİdariVeTeknikŞartname.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoğrudanTeminPeriyodikİdariVeTeknikŞartname.Designer.cs">
+      <DependentUpon>DoğrudanTeminPeriyodikİdariVeTeknikŞartname.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoğrudanTeminPeriyotikBakımFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoğrudanTeminPeriyotikBakımFormu.Designer.cs">
+      <DependentUpon>DoğrudanTeminPeriyotikBakımFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoğrudanTeminYapımİşi\DoğrudanTeminPiyasaFiyatArastırmaFormGöter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoğrudanTeminYapımİşi\DoğrudanTeminPiyasaFiyatArastırmaFormGöter.Designer.cs">
+      <DependentUpon>DoğrudanTeminPiyasaFiyatArastırmaFormGöter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HerkezeAçıkİhaleHizmetAlımı\HerkezeAçıkİhaleHizmetAlımıSözleşmeTaslağı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HerkezeAçıkİhaleHizmetAlımı\HerkezeAçıkİhaleHizmetAlımıSözleşmeTaslağı.Designer.cs">
+      <DependentUpon>HerkezeAçıkİhaleHizmetAlımıSözleşmeTaslağı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HerkezeAçıkİhaleHizmetAlımı\StandartFormlar\HerkezeAcıkİhaleHizmetAlımıİhaleİptalKararıBildirimMektubu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HerkezeAçıkİhaleHizmetAlımı\StandartFormlar\HerkezeAcıkİhaleHizmetAlımıİhaleİptalKararıBildirimMektubu.Designer.cs">
+      <DependentUpon>HerkezeAcıkİhaleHizmetAlımıİhaleİptalKararıBildirimMektubu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HerkezeAçıkİhaleHizmetAlımı\StandartFormlar\HerkezeAçıkİhaleHizmetAlımıSözleşmeDavetMektubu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HerkezeAçıkİhaleHizmetAlımı\StandartFormlar\HerkezeAçıkİhaleHizmetAlımıSözleşmeDavetMektubu.Designer.cs">
+      <DependentUpon>HerkezeAçıkİhaleHizmetAlımıSözleşmeDavetMektubu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HerkezeAçıkİhaleHizmetAlımı\StandartFormlar\HerkezeAçıkİhaleHizmetAlımıKesinlesenİhaleKararıBildirimMektubu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HerkezeAçıkİhaleHizmetAlımı\StandartFormlar\HerkezeAçıkİhaleHizmetAlımıKesinlesenİhaleKararıBildirimMektubu.Designer.cs">
+      <DependentUpon>HerkezeAçıkİhaleHizmetAlımıKesinlesenİhaleKararıBildirimMektubu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HerkezeAçıkİhaleHizmetAlımı\StandartFormlar\HerkezeAçıkİhaleHizmetAlımıTeklifEdilenTutarlarTutanağı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HerkezeAçıkİhaleHizmetAlımı\StandartFormlar\HerkezeAçıkİhaleHizmetAlımıTeklifEdilenTutarlarTutanağı.Designer.cs">
+      <DependentUpon>HerkezeAçıkİhaleHizmetAlımıTeklifEdilenTutarlarTutanağı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HerkezeAçıkİhaleHizmetAlımı\StandartFormlar\HerkezeAçıkİhaleHizmetAlımıDeğerlendirmeDışıBırakılanTekliflerİçinİhaleKomisyonuTutanağı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HerkezeAçıkİhaleHizmetAlımı\StandartFormlar\HerkezeAçıkİhaleHizmetAlımıDeğerlendirmeDışıBırakılanTekliflerİçinİhaleKomisyonuTutanağı.Designer.cs">
+      <DependentUpon>HerkezeAçıkİhaleHizmetAlımıDeğerlendirmeDışıBırakılanTekliflerİçinİhaleKomisyonuTutanağı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HerkezeAçıkİhaleHizmetAlımı\StandartFormlar\HerkezeAçıkİhaleHizmetAlımıZarfAçmaKontrolTutanağı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HerkezeAçıkİhaleHizmetAlımı\StandartFormlar\HerkezeAçıkİhaleHizmetAlımıZarfAçmaKontrolTutanağı.Designer.cs">
+      <DependentUpon>HerkezeAçıkİhaleHizmetAlımıZarfAçmaKontrolTutanağı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HerkezeAçıkİhaleHizmetAlımı\StandartFormlar\HerkezeAçıkİhaleHizmetAlımıAlındıBelgesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HerkezeAçıkİhaleHizmetAlımı\StandartFormlar\HerkezeAçıkİhaleHizmetAlımıAlındıBelgesi.Designer.cs">
+      <DependentUpon>HerkezeAçıkİhaleHizmetAlımıAlındıBelgesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HerkezeAçıkİhaleHizmetAlımı\StandartFormlar\HerkeseAçıkİhaleHizmetAlımıİhaleÖnYeterlilikFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HerkezeAçıkİhaleHizmetAlımı\StandartFormlar\HerkeseAçıkİhaleHizmetAlımıİhaleÖnYeterlilikFormu.Designer.cs">
+      <DependentUpon>HerkeseAçıkİhaleHizmetAlımıİhaleÖnYeterlilikFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HerkezeAçıkİhaleHizmetAlımı\StandartFormlar\HerkesAçıkİhaleHizmetAlımıİhaleHarcamaOnayBelgesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HerkezeAçıkİhaleHizmetAlımı\StandartFormlar\HerkesAçıkİhaleHizmetAlımıİhaleHarcamaOnayBelgesi.Designer.cs">
+      <DependentUpon>HerkesAçıkİhaleHizmetAlımıİhaleHarcamaOnayBelgesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HerkezeAçıkİhaleHizmetAlımı\StandartFormlar\HerkezeAçıkİhaleHizmetAlımıSatınAlmaTalepFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HerkezeAçıkİhaleHizmetAlımı\StandartFormlar\HerkezeAçıkİhaleHizmetAlımıSatınAlmaTalepFormu.Designer.cs">
+      <DependentUpon>HerkezeAçıkİhaleHizmetAlımıSatınAlmaTalepFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HerkezeAçıkİhaleHizmetAlımı\StandartFormlar\Herkeze Açık İhale Hizmet Alımı Tip Yaklasik Maliyet Formu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HerkezeAçıkİhaleHizmetAlımı\StandartFormlar\Herkeze Açık İhale Hizmet Alımı Tip Yaklasik Maliyet Formu.Designer.cs">
+      <DependentUpon>Herkeze Açık İhale Hizmet Alımı Tip Yaklasik Maliyet Formu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HerkezeAçıkİhaleHizmetAlımı\HerkezeAçıkİhaleHizmetAlımıTeknikŞartName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HerkezeAçıkİhaleHizmetAlımı\HerkezeAçıkİhaleHizmetAlımıTeknikŞartName.Designer.cs">
+      <DependentUpon>HerkezeAçıkİhaleHizmetAlımıTeknikŞartName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HerkezeAçıkİhaleHizmetAlımı\StandartFormlar\HerkezeAçıkİhaleHizmetAlımıİhaleKomisyonuKararı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HerkezeAçıkİhaleHizmetAlımı\StandartFormlar\HerkezeAçıkİhaleHizmetAlımıİhaleKomisyonuKararı.Designer.cs">
+      <DependentUpon>HerkezeAçıkİhaleHizmetAlımıİhaleKomisyonuKararı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsilKomisyonÜyeleri.cs" />
+    <Compile Include="ParasalLimitler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParasalLimitler.Designer.cs">
+      <DependentUpon>ParasalLimitler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SatınAlmaBilgilendirmeFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SatınAlmaBilgilendirmeFormu.Designer.cs">
+      <DependentUpon>SatınAlmaBilgilendirmeFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SatınAlmaModülüDışındakiler\AnaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SatınAlmaModülüDışındakiler\AnaForm.Designer.cs">
+      <DependentUpon>AnaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Belli İstekliler\Belli İstekliler Hizmet Alımı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Belli İstekliler\Belli İstekliler Hizmet Alımı.Designer.cs">
+      <DependentUpon>Belli İstekliler Hizmet Alımı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Belli İstekliler\BelliİsteklilerYapımİşi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Belli İstekliler\BelliİsteklilerYapımİşi.Designer.cs">
+      <DependentUpon>BelliİsteklilerYapımİşi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoğrudanTeminYapımİşi\DoğrudanKontrolTeminListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoğrudanTeminYapımİşi\DoğrudanKontrolTeminListesi.Designer.cs">
+      <DependentUpon>DoğrudanKontrolTeminListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoğrudanTeminYapımİşi\DoğrudanTeminÜsülüSözleşmeliYapımİşiTipYaklaşıkMaliyetFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoğrudanTeminYapımİşi\DoğrudanTeminÜsülüSözleşmeliYapımİşiTipYaklaşıkMaliyetFormu.Designer.cs">
+      <DependentUpon>DoğrudanTeminÜsülüSözleşmeliYapımİşiTipYaklaşıkMaliyetFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoğrudanTeminYapımİşi\DoğrudanTeminSözleşmeliYapımİşiFirmaEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoğrudanTeminYapımİşi\DoğrudanTeminSözleşmeliYapımİşiFirmaEkle.Designer.cs">
+      <DependentUpon>DoğrudanTeminSözleşmeliYapımİşiFirmaEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoğrudanTeminYapımİşi\DoğrudanTeminÜsülüSözleşmeliYapımİşiNihaiTeklifler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoğrudanTeminYapımİşi\DoğrudanTeminÜsülüSözleşmeliYapımİşiNihaiTeklifler.Designer.cs">
+      <DependentUpon>DoğrudanTeminÜsülüSözleşmeliYapımİşiNihaiTeklifler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FirmaBilgileri.cs" />
+    <Compile Include="HerkezeAçıkİhaleHizmetAlımı\Komisyonlar\HerkeseAçıkİhaleHizmetAlımıMuayeneVeKabulKomisyonuOluşturmaYazısı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HerkezeAçıkİhaleHizmetAlımı\Komisyonlar\HerkeseAçıkİhaleHizmetAlımıMuayeneVeKabulKomisyonuOluşturmaYazısı.Designer.cs">
+      <DependentUpon>HerkeseAçıkİhaleHizmetAlımıMuayeneVeKabulKomisyonuOluşturmaYazısı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HerkezeAçıkİhaleHizmetAlımı\HerkezeAçıkİhaleHizmetAlımı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HerkezeAçıkİhaleHizmetAlımı\HerkezeAçıkİhaleHizmetAlımı.Designer.cs">
+      <DependentUpon>HerkezeAçıkİhaleHizmetAlımı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HerkezeAçıkİhaleHizmetAlımı\Komisyonlar\HerkezeAçıkİhaleHizmetAlımıKontrolVeMuayneKomisyonTablosu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HerkezeAçıkİhaleHizmetAlımı\Komisyonlar\HerkezeAçıkİhaleHizmetAlımıKontrolVeMuayneKomisyonTablosu.Designer.cs">
+      <DependentUpon>HerkezeAçıkİhaleHizmetAlımıKontrolVeMuayneKomisyonTablosu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HerkezeAçıkİhaleHizmetAlımı\HerkezeAçıkİhaleHizmetAlımıİdariŞartName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HerkezeAçıkİhaleHizmetAlımı\HerkezeAçıkİhaleHizmetAlımıİdariŞartName.Designer.cs">
+      <DependentUpon>HerkezeAçıkİhaleHizmetAlımıİdariŞartName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HerkezeAçıkİhaleHizmetAlımı\İhale\HerkezeAçıkİhaleHizmetAlımıİhaleİlanı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HerkezeAçıkİhaleHizmetAlımı\İhale\HerkezeAçıkİhaleHizmetAlımıİhaleİlanı.Designer.cs">
+      <DependentUpon>HerkezeAçıkİhaleHizmetAlımıİhaleİlanı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HerkezeAçıkİhaleHizmetAlımı\Komisyonlar\HerkezeAçıkİhaleKomisyonOlurYazısı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HerkezeAçıkİhaleHizmetAlımı\Komisyonlar\HerkezeAçıkİhaleKomisyonOlurYazısı.Designer.cs">
+      <DependentUpon>HerkezeAçıkİhaleKomisyonOlurYazısı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HerkezeAçıkİhaleHizmetAlımı\HerkezeAçıkİhaleMalAlımı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HerkezeAçıkİhaleHizmetAlımı\HerkezeAçıkİhaleMalAlımı.Designer.cs">
+      <DependentUpon>HerkezeAçıkİhaleMalAlımı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HerkezeAçıkİhaleHizmetAlımı\HerkezeAçıkİhaleYapımİşi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HerkezeAçıkİhaleHizmetAlımı\HerkezeAçıkİhaleYapımİşi.Designer.cs">
+      <DependentUpon>HerkezeAçıkİhaleYapımİşi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoğrudanTeminYapımİşi\DoğrudanTeminÜsülüSözleşmeliYapımİşiKesinKabulTutanağı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoğrudanTeminYapımİşi\DoğrudanTeminÜsülüSözleşmeliYapımİşiKesinKabulTutanağı.Designer.cs">
+      <DependentUpon>DoğrudanTeminÜsülüSözleşmeliYapımİşiKesinKabulTutanağı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoğrudanTeminYapımİşi\DoğrudanTeminÜsülüSözleşmeliYapımİşiKabulKomisyonuOlurYazısı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoğrudanTeminYapımİşi\DoğrudanTeminÜsülüSözleşmeliYapımİşiKabulKomisyonuOlurYazısı.Designer.cs">
+      <DependentUpon>DoğrudanTeminÜsülüSözleşmeliYapımİşiKabulKomisyonuOlurYazısı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SatınAlmaModülüDışındakiler\KullanıcıGirisFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SatınAlmaModülüDışındakiler\KullanıcıGirisFormu.Designer.cs">
+      <DependentUpon>KullanıcıGirisFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoğrudanTeminYapımİşi\DoğrudanTeminÜsülüSözleşmeliYapımİşiNihaiTeklif.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoğrudanTeminYapımİşi\DoğrudanTeminÜsülüSözleşmeliYapımİşiNihaiTeklif.Designer.cs">
+      <DependentUpon>DoğrudanTeminÜsülüSözleşmeliYapımİşiNihaiTeklif.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pazarlık Üsülü İhale\PazarlıkÜsülüİhaleAcıkİhaleYapılamayan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pazarlık Üsülü İhale\PazarlıkÜsülüİhaleAcıkİhaleYapılamayan.Designer.cs">
+      <DependentUpon>PazarlıkÜsülüİhaleAcıkİhaleYapılamayan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pazarlık Üsülü İhale\PazarlıkÜsülüİhaleHizmetAlımı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pazarlık Üsülü İhale\PazarlıkÜsülüİhaleHizmetAlımı.Designer.cs">
+      <DependentUpon>PazarlıkÜsülüİhaleHizmetAlımı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pazarlık Üsülü İhale\PazarlıkÜsülüİhaleYapımİsi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pazarlık Üsülü İhale\PazarlıkÜsülüİhaleYapımİsi.Designer.cs">
+      <DependentUpon>PazarlıkÜsülüİhaleYapımİsi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoğrudanTeminYapımİşi\DoğrudanTeminÜsülüSözleşmeliYapımİşiPiyasaFiyatAraştırmaTutanağı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoğrudanTeminYapımİşi\DoğrudanTeminÜsülüSözleşmeliYapımİşiPiyasaFiyatAraştırmaTutanağı.Designer.cs">
+      <DependentUpon>DoğrudanTeminÜsülüSözleşmeliYapımİşiPiyasaFiyatAraştırmaTutanağı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoğrudanTeminYapımİşi\DoğrudanTeminÜsülüSözleşmeliYapımİşiSatınAlmaTalepFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoğrudanTeminYapımİşi\DoğrudanTeminÜsülüSözleşmeliYapımİşiSatınAlmaTalepFormu.Designer.cs">
+      <DependentUpon>DoğrudanTeminÜsülüSözleşmeliYapımİşiSatınAlmaTalepFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoğrudanTeminYapımİşi\DoğrudanTeminÜsülüSözleşmeliYapımİşiSözleşmeTaslağı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoğrudanTeminYapımİşi\DoğrudanTeminÜsülüSözleşmeliYapımİşiSözleşmeTaslağı.Designer.cs">
+      <DependentUpon>DoğrudanTeminÜsülüSözleşmeliYapımİşiSözleşmeTaslağı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoğrudanTeminYapımİşi\DoğrudanTeminÜsülüSözleşmeliYapımİşiYaklaşıkMaliyetTeklif.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoğrudanTeminYapımİşi\DoğrudanTeminÜsülüSözleşmeliYapımİşiYaklaşıkMaliyetTeklif.Designer.cs">
+      <DependentUpon>DoğrudanTeminÜsülüSözleşmeliYapımİşiYaklaşıkMaliyetTeklif.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoğrudanTeminYapımİşi\DoğrudanTeminÜsülüSözleşmeliYapımİşiFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoğrudanTeminYapımİşi\DoğrudanTeminÜsülüSözleşmeliYapımİşiFormu.Designer.cs">
+      <DependentUpon>DoğrudanTeminÜsülüSözleşmeliYapımİşiFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SatınAlmaModülüDışındakiler\YöneticiAyarları.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SatınAlmaModülüDışındakiler\YöneticiAyarları.Designer.cs">
+      <DependentUpon>YöneticiAyarları.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SatınAlmaModülüDışındakiler\Kullanıcıİşlemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SatınAlmaModülüDışındakiler\Kullanıcıİşlemleri.Designer.cs">
+      <DependentUpon>Kullanıcıİşlemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SatınAlmaFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SatınAlmaFormu.Designer.cs">
+      <DependentUpon>SatınAlmaFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoğrudanTeminYapımİşi\DoğrudanTeminÜsülüSözleşmeliYapımİşiİdariVeTeknikŞartName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoğrudanTeminYapımİşi\DoğrudanTeminÜsülüSözleşmeliYapımİşiİdariVeTeknikŞartName.Designer.cs">
+      <DependentUpon>DoğrudanTeminÜsülüSözleşmeliYapımİşiİdariVeTeknikŞartName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoğrudanTeminYapımİşi\DoğrudanTeminÜsülüSözleşmeliYapımİşiİhaleHarcamaOnayBelgesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoğrudanTeminYapımİşi\DoğrudanTeminÜsülüSözleşmeliYapımİşiİhaleHarcamaOnayBelgesi.Designer.cs">
+      <DependentUpon>DoğrudanTeminÜsülüSözleşmeliYapımİşiİhaleHarcamaOnayBelgesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YedekKomisyonÜyeleri.cs" />
+    <Compile Include="ZekaDenemeProje1DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZekaDenemeProje1DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ZekaDenemeProje1DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZekaDenemeProje1DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ZekaDenemeProje1DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZekaDenemeProje1DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ZekaDenemeProje1DataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZekaDenemeProje1DataSet3.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DogrudanTeminPeriyodikHizmetBelgesi.resx">
+      <DependentUpon>DogrudanTeminPeriyodikHizmetBelgesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoğrudanTeminPeriyodikBakımİsSecmeFormu.resx">
+      <DependentUpon>DoğrudanTeminPeriyodikBakımİsSecmeFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoğrudanTeminPeriyodikEvrakYükleme.resx">
+      <DependentUpon>DoğrudanTeminPeriyodikEvrakYükleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoğrudanTeminPeriyodikFirmaEkleme.resx">
+      <DependentUpon>DoğrudanTeminPeriyodikFirmaEkleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoğrudanTeminPeriyodikFirmaTeklifSecmeVeSözlesmeHazırlama.resx">
+      <DependentUpon>DoğrudanTeminPeriyodikFirmaTeklifSecmeVeSözlesmeHazırlama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoğrudanTeminPeriyodikSatınAlmaBilgilendirmeFormu.resx">
+      <DependentUpon>DoğrudanTeminPeriyodikSatınAlmaBilgilendirmeFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoğrudanTeminPeriyodikSözlesmeTaslağı.resx">
+      <DependentUpon>DoğrudanTeminPeriyodikSözlesmeTaslağı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoğrudanTeminPeriyodikİdariVeTeknikŞartname.resx">
+      <DependentUpon>DoğrudanTeminPeriyodikİdariVeTeknikŞartname.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoğrudanTeminPeriyotikBakımFormu.resx">
+      <DependentUpon>DoğrudanTeminPeriyotikBakımFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoğrudanTeminYapımİşi\DoğrudanTeminPiyasaFiyatArastırmaFormGöter.resx">
+      <DependentUpon>DoğrudanTeminPiyasaFiyatArastırmaFormGöter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HerkezeAçıkİhaleHizmetAlımı\HerkezeAçıkİhaleHizmetAlımıSözleşmeTaslağı.resx">
+      <DependentUpon>HerkezeAçıkİhaleHizmetAlımıSözleşmeTaslağı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HerkezeAçıkİhaleHizmetAlımı\StandartFormlar\HerkezeAcıkİhaleHizmetAlımıİhaleİptalKararıBildirimMektubu.resx">
+      <DependentUpon>HerkezeAcıkİhaleHizmetAlımıİhaleİptalKararıBildirimMektubu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HerkezeAçıkİhaleHizmetAlımı\StandartFormlar\HerkezeAçıkİhaleHizmetAlımıSözleşmeDavetMektubu.resx">
+      <DependentUpon>HerkezeAçıkİhaleHizmetAlımıSözleşmeDavetMektubu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HerkezeAçıkİhaleHizmetAlımı\StandartFormlar\HerkezeAçıkİhaleHizmetAlımıKesinlesenİhaleKararıBildirimMektubu.resx">
+      <DependentUpon>HerkezeAçıkİhaleHizmetAlımıKesinlesenİhaleKararıBildirimMektubu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HerkezeAçıkİhaleHizmetAlımı\StandartFormlar\HerkezeAçıkİhaleHizmetAlımıTeklifEdilenTutarlarTutanağı.resx">
+      <DependentUpon>HerkezeAçıkİhaleHizmetAlımıTeklifEdilenTutarlarTutanağı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HerkezeAçıkİhaleHizmetAlımı\StandartFormlar\HerkezeAçıkİhaleHizmetAlımıDeğerlendirmeDışıBırakılanTekliflerİçinİhaleKomisyonuTutanağı.resx">
+      <DependentUpon>HerkezeAçıkİhaleHizmetAlımıDeğerlendirmeDışıBırakılanTekliflerİçinİhaleKomisyonuTutanağı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HerkezeAçıkİhaleHizmetAlımı\StandartFormlar\HerkezeAçıkİhaleHizmetAlımıZarfAçmaKontrolTutanağı.resx">
+      <DependentUpon>HerkezeAçıkİhaleHizmetAlımıZarfAçmaKontrolTutanağı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HerkezeAçıkİhaleHizmetAlımı\StandartFormlar\HerkezeAçıkİhaleHizmetAlımıAlındıBelgesi.resx">
+      <DependentUpon>HerkezeAçıkİhaleHizmetAlımıAlındıBelgesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HerkezeAçıkİhaleHizmetAlımı\StandartFormlar\HerkeseAçıkİhaleHizmetAlımıİhaleÖnYeterlilikFormu.resx">
+      <DependentUpon>HerkeseAçıkİhaleHizmetAlımıİhaleÖnYeterlilikFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HerkezeAçıkİhaleHizmetAlımı\StandartFormlar\HerkesAçıkİhaleHizmetAlımıİhaleHarcamaOnayBelgesi.resx">
+      <DependentUpon>HerkesAçıkİhaleHizmetAlımıİhaleHarcamaOnayBelgesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HerkezeAçıkİhaleHizmetAlımı\StandartFormlar\HerkezeAçıkİhaleHizmetAlımıSatınAlmaTalepFormu.resx">
+      <DependentUpon>HerkezeAçıkİhaleHizmetAlımıSatınAlmaTalepFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HerkezeAçıkİhaleHizmetAlımı\StandartFormlar\Herkeze Açık İhale Hizmet Alımı Tip Yaklasik Maliyet Formu.resx">
+      <DependentUpon>Herkeze Açık İhale Hizmet Alımı Tip Yaklasik Maliyet Formu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HerkezeAçıkİhaleHizmetAlımı\HerkezeAçıkİhaleHizmetAlımıTeknikŞartName.resx">
+      <DependentUpon>HerkezeAçıkİhaleHizmetAlımıTeknikŞartName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HerkezeAçıkİhaleHizmetAlımı\StandartFormlar\HerkezeAçıkİhaleHizmetAlımıİhaleKomisyonuKararı.resx">
+      <DependentUpon>HerkezeAçıkİhaleHizmetAlımıİhaleKomisyonuKararı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParasalLimitler.resx">
+      <DependentUpon>ParasalLimitler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SatınAlmaBilgilendirmeFormu.resx">
+      <DependentUpon>SatınAlmaBilgilendirmeFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SatınAlmaModülüDışındakiler\AnaForm.resx">
+      <DependentUpon>AnaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Belli İstekliler\Belli İstekliler Hizmet Alımı.resx">
+      <DependentUpon>Belli İstekliler Hizmet Alımı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Belli İstekliler\BelliİsteklilerYapımİşi.resx">
+      <DependentUpon>BelliİsteklilerYapımİşi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoğrudanTeminYapımİşi\DoğrudanKontrolTeminListesi.resx">
+      <DependentUpon>DoğrudanKontrolTeminListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoğrudanTeminYapımİşi\DoğrudanTeminÜsülüSözleşmeliYapımİşiTipYaklaşıkMaliyetFormu.resx">
+      <DependentUpon>DoğrudanTeminÜsülüSözleşmeliYapımİşiTipYaklaşıkMaliyetFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoğrudanTeminYapımİşi\DoğrudanTeminSözleşmeliYapımİşiFirmaEkle.resx">
+      <DependentUpon>DoğrudanTeminSözleşmeliYapımİşiFirmaEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoğrudanTeminYapımİşi\DoğrudanTeminÜsülüSözleşmeliYapımİşiNihaiTeklifler.resx">
+      <DependentUpon>DoğrudanTeminÜsülüSözleşmeliYapımİşiNihaiTeklifler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HerkezeAçıkİhaleHizmetAlımı\Komisyonlar\HerkeseAçıkİhaleHizmetAlımıMuayeneVeKabulKomisyonuOluşturmaYazısı.resx">
+      <DependentUpon>HerkeseAçıkİhaleHizmetAlımıMuayeneVeKabulKomisyonuOluşturmaYazısı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HerkezeAçıkİhaleHizmetAlımı\HerkezeAçıkİhaleHizmetAlımı.resx">
+      <DependentUpon>HerkezeAçıkİhaleHizmetAlımı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HerkezeAçıkİhaleHizmetAlımı\Komisyonlar\HerkezeAçıkİhaleHizmetAlımıKontrolVeMuayneKomisyonTablosu.resx">
+      <DependentUpon>HerkezeAçıkİhaleHizmetAlımıKontrolVeMuayneKomisyonTablosu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HerkezeAçıkİhaleHizmetAlımı\HerkezeAçıkİhaleHizmetAlımıİdariŞartName.resx">
+      <DependentUpon>HerkezeAçıkİhaleHizmetAlımıİdariŞartName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HerkezeAçıkİhaleHizmetAlımı\İhale\HerkezeAçıkİhaleHizmetAlımıİhaleİlanı.resx">
+      <DependentUpon>HerkezeAçıkİhaleHizmetAlımıİhaleİlanı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HerkezeAçıkİhaleHizmetAlımı\Komisyonlar\HerkezeAçıkİhaleKomisyonOlurYazısı.resx">
+      <DependentUpon>HerkezeAçıkİhaleKomisyonOlurYazısı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HerkezeAçıkİhaleHizmetAlımı\HerkezeAçıkİhaleMalAlımı.resx">
+      <DependentUpon>HerkezeAçıkİhaleMalAlımı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HerkezeAçıkİhaleHizmetAlımı\HerkezeAçıkİhaleYapımİşi.resx">
+      <DependentUpon>HerkezeAçıkİhaleYapımİşi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoğrudanTeminYapımİşi\DoğrudanTeminÜsülüSözleşmeliYapımİşiKesinKabulTutanağı.resx">
+      <DependentUpon>DoğrudanTeminÜsülüSözleşmeliYapımİşiKesinKabulTutanağı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoğrudanTeminYapımİşi\DoğrudanTeminÜsülüSözleşmeliYapımİşiKabulKomisyonuOlurYazısı.resx">
+      <DependentUpon>DoğrudanTeminÜsülüSözleşmeliYapımİşiKabulKomisyonuOlurYazısı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SatınAlmaModülüDışındakiler\KullanıcıGirisFormu.resx">
+      <DependentUpon>KullanıcıGirisFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoğrudanTeminYapımİşi\DoğrudanTeminÜsülüSözleşmeliYapımİşiNihaiTeklif.resx">
+      <DependentUpon>DoğrudanTeminÜsülüSözleşmeliYapımİşiNihaiTeklif.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pazarlık Üsülü İhale\PazarlıkÜsülüİhaleAcıkİhaleYapılamayan.resx">
+      <DependentUpon>PazarlıkÜsülüİhaleAcıkİhaleYapılamayan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pazarlık Üsülü İhale\PazarlıkÜsülüİhaleHizmetAlımı.resx">
+      <DependentUpon>PazarlıkÜsülüİhaleHizmetAlımı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pazarlık Üsülü İhale\PazarlıkÜsülüİhaleYapımİsi.resx">
+      <DependentUpon>PazarlıkÜsülüİhaleYapımİsi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoğrudanTeminYapımİşi\DoğrudanTeminÜsülüSözleşmeliYapımİşiPiyasaFiyatAraştırmaTutanağı.resx">
+      <DependentUpon>DoğrudanTeminÜsülüSözleşmeliYapımİşiPiyasaFiyatAraştırmaTutanağı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="DoğrudanTeminYapımİşi\DoğrudanTeminÜsülüSözleşmeliYapımİşiSatınAlmaTalepFormu.resx">
+      <DependentUpon>DoğrudanTeminÜsülüSözleşmeliYapımİşiSatınAlmaTalepFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoğrudanTeminYapımİşi\DoğrudanTeminÜsülüSözleşmeliYapımİşiSözleşmeTaslağı.resx">
+      <DependentUpon>DoğrudanTeminÜsülüSözleşmeliYapımİşiSözleşmeTaslağı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoğrudanTeminYapımİşi\DoğrudanTeminÜsülüSözleşmeliYapımİşiYaklaşıkMaliyetTeklif.resx">
+      <DependentUpon>DoğrudanTeminÜsülüSözleşmeliYapımİşiYaklaşıkMaliyetTeklif.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoğrudanTeminYapımİşi\DoğrudanTeminÜsülüSözleşmeliYapımİşiFormu.resx">
+      <DependentUpon>DoğrudanTeminÜsülüSözleşmeliYapımİşiFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SatınAlmaModülüDışındakiler\YöneticiAyarları.resx">
+      <DependentUpon>YöneticiAyarları.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SatınAlmaModülüDışındakiler\Kullanıcıİşlemleri.resx">
+      <DependentUpon>Kullanıcıİşlemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SatınAlmaFormu.resx">
+      <DependentUpon>SatınAlmaFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoğrudanTeminYapımİşi\DoğrudanTeminÜsülüSözleşmeliYapımİşiİdariVeTeknikŞartName.resx">
+      <DependentUpon>DoğrudanTeminÜsülüSözleşmeliYapımİşiİdariVeTeknikŞartName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoğrudanTeminYapımİşi\DoğrudanTeminÜsülüSözleşmeliYapımİşiİhaleHarcamaOnayBelgesi.resx">
+      <DependentUpon>DoğrudanTeminÜsülüSözleşmeliYapımİşiİhaleHarcamaOnayBelgesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="SatınAlmaModülüDışındakiler\App.config" />
+    <None Include="app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="ZekaDenemeProje1DataSet.xsc">
+      <DependentUpon>ZekaDenemeProje1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ZekaDenemeProje1DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ZekaDenemeProje1DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ZekaDenemeProje1DataSet.xss">
+      <DependentUpon>ZekaDenemeProje1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ZekaDenemeProje1DataSet1.xsc">
+      <DependentUpon>ZekaDenemeProje1DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ZekaDenemeProje1DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ZekaDenemeProje1DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ZekaDenemeProje1DataSet1.xss">
+      <DependentUpon>ZekaDenemeProje1DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ZekaDenemeProje1DataSet2.xsc">
+      <DependentUpon>ZekaDenemeProje1DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ZekaDenemeProje1DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ZekaDenemeProje1DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ZekaDenemeProje1DataSet2.xss">
+      <DependentUpon>ZekaDenemeProje1DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ZekaDenemeProje1DataSet3.xsc">
+      <DependentUpon>ZekaDenemeProje1DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ZekaDenemeProje1DataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ZekaDenemeProje1DataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ZekaDenemeProje1DataSet3.xss">
+      <DependentUpon>ZekaDenemeProje1DataSet3.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DoğrudanTeminPeriyotikBakım\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
